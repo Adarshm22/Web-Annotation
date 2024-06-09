@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Highlight and Note</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .highlight {
+            cursor: pointer;
+        }
+
+        .highlight-dialog {
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        label, textarea, input {
+            display: block;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <label for="highlightColor">Highlight Color:</label>
+        <input type="color" id="highlightColor" name="highlightColor" value="#ffff00">
+
+        <label for="highlightNote">Note:</label>
+        <textarea id="highlightNote" rows="4"></textarea>
+
+        <button id="saveHighlight">Save Highlight</button>
+    </div>
+
+    <script src="highlight_and_note.js"></script>
+</body>
+</html>

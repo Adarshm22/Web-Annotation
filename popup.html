@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Annotations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h3>Annotations</h3>
+        <label for="search">Search:</label>
+        <input type="text" id="search" placeholder="Search annotations...">
+        <label for="filterDate">Filter by Date:</label>
+        <input type="date" id="filterDate">
+        <label for="filterCategory">Filter by Category:</label>
+        <select id="filterCategory">
+            <option value="">All</option>
+            <!-- Add categories dynamically if applicable -->
+        </select>
+        <button id="applyFilters">Apply Filters</button>
+        <button id="clearFilters">Clear Filters</button>
+        <button id="clearHighlights">Clear Highlights</button>
+        <button id="exportAnnotations">Export Annotations</button>
+
+        <div id="annotationsList"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
